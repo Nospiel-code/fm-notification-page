@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Nospiel-code/fm-notification-page)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://nospiel-code.github.io/fm-notification-page/)
 
 ## My process
 

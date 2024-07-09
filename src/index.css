@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(210, 60%, 98%);
+  line-height: 1.5;
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(219, 12%, 42%);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(219, 85%, 26%);
+  transition: color 200ms ease-in-out;
+
+  &:is(:hover, :focus) {
+    color: hsl(224, 21%, 14%);
+  }
+}

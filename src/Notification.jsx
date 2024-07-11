@@ -1,6 +1,6 @@
 function Notification({ notificationObj, onMarkNotificationAsRead }) {
   return (
-    <div
+    <li
       onClick={() => onMarkNotificationAsRead(notificationObj.id)}
       className={`flex items-start justify-between gap-2 rounded-xl p-4 ${
         !notificationObj.hasBeenRead ? "bg-secondary200" : ""
@@ -51,7 +51,7 @@ function Notification({ notificationObj, onMarkNotificationAsRead }) {
           />
         </a>
       )}
-    </div>
+    </li>
   );
 }
 

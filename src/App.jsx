@@ -2,14 +2,14 @@ import { useState } from "react";
 import "./App.css";
 
 import Notification from "./Notification";
-import Header from "./Header";
+import Summary from "./Summary";
 
 let data = [
   {
     id: "1",
     author: {
       name: "Mark Webber",
-      src: "../public/images/avatar-mark-webber.webp",
+      src: "./images/avatar-mark-webber.webp",
       href: "#",
     },
     action: "reacted to your recent post",
@@ -24,7 +24,7 @@ let data = [
     id: "2",
     author: {
       name: "Angela Gray",
-      src: "../public/images/avatar-angela-gray.webp",
+      src: "./images/avatar-angela-gray.webp",
       href: "#",
     },
     action: "followed you",
@@ -35,7 +35,7 @@ let data = [
     id: "3",
     author: {
       name: "Jacob Thompson",
-      src: "../public/images/avatar-jacob-thompson.webp",
+      src: "./images/avatar-jacob-thompson.webp",
       href: "#",
     },
     action: "has joined your group",
@@ -50,7 +50,7 @@ let data = [
     id: "4",
     author: {
       name: "Rizky Hasanuddin",
-      src: "../public/images/avatar-rizky-hasanuddin.webp",
+      src: "./images/avatar-rizky-hasanuddin.webp",
       href: "#",
     },
     action: "sent you a private message",
@@ -63,13 +63,13 @@ let data = [
     id: "5",
     author: {
       name: "Kimberly Smith",
-      src: "../public/images/avatar-kimberly-smith.webp",
+      src: "./images/avatar-kimberly-smith.webp",
       href: "#",
     },
     action: "commented on your picture",
     time: "1week ago",
     img: {
-      src: "../public/images/image-chess.webp",
+      src: "./images/image-chess.webp",
       href: "#",
       alt: "chess game",
     },
@@ -79,7 +79,7 @@ let data = [
     id: "6",
     author: {
       name: "Nathan Peterson",
-      src: "../public/images/avatar-nathan-peterson.webp",
+      src: "./images/avatar-nathan-peterson.webp",
       href: "#",
     },
     action: "reacted to your recent post",
@@ -94,7 +94,7 @@ let data = [
     id: "7",
     author: {
       name: "Anna Kim",
-      src: "../public/images/avatar-anna-kim.webp",
+      src: "./images/avatar-anna-kim.webp",
       href: "#",
     },
     action: "left the group",
@@ -125,8 +125,11 @@ function App() {
   return (
     <div>
       <div className="max-w-[48rem] gap-1 rounded-lg bg-secondary100 px-4 py-10 shadow-lg shadow-secondary300 md:px-8">
-        <Header notifications={notifications} onMarkAllAsRead={markAllAsRead} />
-        <main className="grid gap-2">
+        <Summary
+          notifications={notifications}
+          onMarkAllAsRead={markAllAsRead}
+        />
+        <ul className="grid gap-2">
           {notifications.map((n) => (
             <Notification
               notificationObj={n}
@@ -134,7 +137,7 @@ function App() {
               onMarkNotificationAsRead={markNotificationAsRead}
             />
           ))}
-        </main>
+        </ul>
       </div>
     </div>
   );

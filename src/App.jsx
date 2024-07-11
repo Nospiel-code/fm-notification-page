@@ -9,7 +9,7 @@ let data = [
     id: "1",
     author: {
       name: "Mark Webber",
-      src: "/fm-notification-page/assets/images/avatar-mark-webber.webp",
+      src: "images/avatar-mark-webber.webp",
       href: "#",
     },
     action: "reacted to your recent post",
@@ -24,7 +24,7 @@ let data = [
     id: "2",
     author: {
       name: "Angela Gray",
-      src: "/fm-notification-page/assets/images/avatar-angela-gray.webp",
+      src: "images/avatar-angela-gray.webp",
       href: "#",
     },
     action: "followed you",
@@ -35,7 +35,7 @@ let data = [
     id: "3",
     author: {
       name: "Jacob Thompson",
-      src: "/fm-notification-page/assets/images/avatar-jacob-thompson.webp",
+      src: "images/avatar-jacob-thompson.webp",
       href: "#",
     },
     action: "has joined your group",
@@ -50,7 +50,7 @@ let data = [
     id: "4",
     author: {
       name: "Rizky Hasanuddin",
-      src: "/fm-notification-page/assets/images/avatar-rizky-hasanuddin.webp",
+      src: "images/avatar-rizky-hasanuddin.webp",
       href: "#",
     },
     action: "sent you a private message",
@@ -63,13 +63,13 @@ let data = [
     id: "5",
     author: {
       name: "Kimberly Smith",
-      src: "/fm-notification-page/assets/images/avatar-kimberly-smith.webp",
+      src: "images/avatar-kimberly-smith.webp",
       href: "#",
     },
     action: "commented on your picture",
     time: "1week ago",
     img: {
-      src: "/fm-notification-page/assets/images/image-chess.webp",
+      src: "images/image-chess.webp",
       href: "#",
       alt: "chess game",
     },
@@ -79,7 +79,7 @@ let data = [
     id: "6",
     author: {
       name: "Nathan Peterson",
-      src: "/fm-notification-page/assets/images/avatar-nathan-peterson.webp",
+      src: "images/avatar-nathan-peterson.webp",
       href: "#",
     },
     action: "reacted to your recent post",
@@ -94,7 +94,7 @@ let data = [
     id: "7",
     author: {
       name: "Anna Kim",
-      src: "/fm-notification-page/assets/images/avatar-anna-kim.webp",
+      src: "images/avatar-anna-kim.webp",
       href: "#",
     },
     action: "left the group",
